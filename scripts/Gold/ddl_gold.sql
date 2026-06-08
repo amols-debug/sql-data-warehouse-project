@@ -21,6 +21,7 @@ ON ci.cst_key=la.cid
 
 Select * from gold.dim_customers
 
+
 --========================================================
 CREATE VIEW gold.dim_products AS
 Select 
@@ -29,8 +30,8 @@ Select
 	pn.prd_key AS product_number,
 	pn.prd_nm AS product_name,
 	pn.cat_id AS catedory_id,
-	pc.cat AS catedory,
-	pc.subcat AS sub_catedory,
+	pc.cat AS category,
+	pc.subcat AS sub_category,
 	pc.maintenance ,
 	pn.prd_cost AS cost,
 	pn.prd_line AS product_line,
